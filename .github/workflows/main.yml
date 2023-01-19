@@ -3,6 +3,7 @@ name: Schedule Planning Center Scrape
 on:
   schedule:
     - cron: '0 9 * * 4'
+  workflow_dispatch:
 
 jobs:
   run-script:

@@ -44,4 +44,5 @@ df["Remaining Time"] = df["Remaining Time"].apply(lambda x: divmod(x, 60))
 df["Remaining Time"] = df["Remaining Time"].apply(lambda x: f"{x[0]}:{x[1]:02d}")
 
 # Output the dataframe to a .csv file
-df.to_csv("broadcast_schedule.csv", index=False)
+df.to_csv("$GITHUB_WORKSPACE/broadcast_schedule.csv", index=False)
+

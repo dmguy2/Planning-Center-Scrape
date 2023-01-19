@@ -16,6 +16,10 @@ jobs:
         python-version: 3.9
     - name: Checkout repository
       uses: actions/checkout@v3
+    - name: Check if file exists
+      run: |
+        echo "Checking file existence in $(pwd)"
+        ls -la
     - name: Copy broadcast_schedule.csv to root directory
       run: cp broadcast_schedule.csv $GITHUB_WORKSPACE
 

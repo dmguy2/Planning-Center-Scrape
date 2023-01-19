@@ -43,6 +43,6 @@ df["Duration"] = df["Duration"].apply(lambda x: f"{x[0]}:{x[1]:02d}")
 df["Remaining Time"] = df["Remaining Time"].apply(lambda x: divmod(x, 60))
 df["Remaining Time"] = df["Remaining Time"].apply(lambda x: f"{x[0]}:{x[1]:02d}")
 
+print(df)
 df.to_csv("$GITHUB_WORKSPACE/planningcenterscrape.csv", index=False)
-
-
+print("File created")
